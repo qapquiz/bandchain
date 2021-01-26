@@ -1,5 +1,6 @@
 use quote::quote;
-use syn::export::{Span, TokenStream2};
+use proc_macro2::TokenStream as TokenStream2;
+use proc_macro2::Span;
 use syn::{Fields, Index, ItemStruct};
 
 pub fn struct_enc(input: &ItemStruct) -> syn::Result<TokenStream2> {

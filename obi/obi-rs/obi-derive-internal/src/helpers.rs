@@ -1,5 +1,5 @@
 use quote::quote;
-use syn::export::TokenStream2;
+use proc_macro2::TokenStream as TokenStream2;
 use syn::Generics;
 
 pub fn declaration(ident_str: &String, generics: &Generics) -> (TokenStream2, Vec<TokenStream2>) {

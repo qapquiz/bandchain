@@ -1,5 +1,5 @@
 use quote::quote;
-use syn::export::TokenStream2;
+use proc_macro2::TokenStream as TokenStream2; 
 use syn::{Fields, ItemStruct};
 
 pub fn struct_dec(input: &ItemStruct) -> syn::Result<TokenStream2> {
